@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Ali Reza",
+    "email": "ali@example.com",
+    "role": "Admin"
+  },
+  {
+    "id": 2,
+    "name": "Sara Mohammadi",
+    "email": "sara@example.com",
+    "role": "Editor"
+  },
+  {
+    "id": 3,
+    "name": "Hassan Karimi",
+    "email": "hassan@example.com",
+    "role": "Viewer"
+  },
+  {
+    "id": 4,
+    "name": "Mina Ahmadi",
+    "email": "mina@example.com",
+    "role": "Editor"
+  },
+  {
+    "id": 5,
+    "name": "Omid Farah",
+    "email": "omid@example.com",
+    "role": "Viewer"
+  },
+  {
+    "id": 6,
+    "name": "Leyla Saeidi",
+    "email": "leyla@example.com",
+    "role": "Admin"
+  }
+]
