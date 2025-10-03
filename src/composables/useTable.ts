@@ -17,11 +17,11 @@ export function useTable(apiUrl: string, columns: Column[], rowsOptions = [5,10,
   const searchQuery = ref('')
   const currentPage = ref(1)
   const rowsPerPage = ref(initialRowsPerPage)
-  const visibleColumns = ref<string[]>(columns.map(c => c.key))
+  const visibleColumns = ref<string[]>(columns?.map(c => c.key))
   const editingCell = ref<{ row: number|null, col: string|null }>({ row:null, col:null })
 
   const displayedColumns = computed(() =>
-    columns.filter(col => visibleColumns.value.includes(col.key))
+    columns?.filter(col => visibleColumns.value.includes(col.key))
   )
 
   const filteredData = computed(() => {
