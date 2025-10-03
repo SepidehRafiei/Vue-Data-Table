@@ -17,6 +17,12 @@
 2. Clone the repository or extract the zip
 3. Inside the project folder, run:
 
+```bash
+
+npm install
+npm run dev
+
+```
 
 ## Technical Details / Architecture
 All table logic (fetching, filtering, pagination, editing) is handled in useTable, keeping components focused on rendering and interactions.
@@ -28,10 +34,7 @@ Data is currently read from jsonplaceholder. To use a real API, simply update th
 src/composables/useTable.ts — table logic
 src/components/DataTable.vue — parent component
 
-```bash
 
-npm install
-npm run dev
 
 
 
