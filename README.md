@@ -16,21 +16,24 @@
 1. Install Node.js >= 18
 2. Clone the repository or extract the zip
 3. Inside the project folder, run:
+
+
+## Technical Details / Architecture
+All table logic (fetching, filtering, pagination, editing) is handled in useTable, keeping components focused on rendering and interactions.
+Components use v-model and emits to communicate with the composable.
+Data is currently read from jsonplaceholder. To use a real API, simply update the apiUrl in App.vue.
+
+
+## Key Files
+src/composables/useTable.ts — table logic
+src/components/DataTable.vue — parent component
+
 ```bash
+
 npm install
 npm run dev
 
 
-#  Technical Details / Architecture
-All table logic (fetching, filtering, pagination, editing) is handled in useTable, keeping components focused on rendering and interactions.
-Components use v-model and emits to communicate with the composable.
-Data is currently read from src/mock/data.json. To use a real API, simply update the apiUrl in App.vue.
-
-
-# Key Files
-src/composables/useTable.ts — table logic
-src/components/DataTable.vue — parent component
-src/mock/data.json — sample data
 
 
 
