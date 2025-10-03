@@ -8,8 +8,9 @@
 import DataTable from './components/DataTable.vue'
 
 const columns = [
-  { key: 'userId', label: 'userId' },
+  { key: 'id', label: 'id' },
   { key: 'title', label: 'title' },
+  { key: 'userId', label: 'userId' },
   { key: 'body', label: 'body' }
 ]
 
