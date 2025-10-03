@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen flex items-center justify-center p-6">
-    <DataTable apiUrl="/src/mock/data.json" :columns="columns" />
+    <DataTable apiUrl="https://jsonplaceholder.typicode.com/posts" :columns="columns" />
   </div>
 </template>
 
@@ -8,9 +8,9 @@
 import DataTable from './components/DataTable.vue'
 
 const columns = [
-  { key: 'id', label: 'ID' },
-  { key: 'name', label: 'Name' },
-  { key: 'email', label: 'Email' },
-  { key: 'role', label: 'Role' }
+  { key: 'userId', label: 'userId' },
+  { key: 'title', label: 'title' },
+  { key: 'body', label: 'body' }
 ]
+
 </script>
